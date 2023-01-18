@@ -50,6 +50,11 @@ child: Image(image: AssetImage(e['image']),),
                           Spacer(),
                           GestureDetector(
                             onTap: (){
+                              setState(() {
+                                Global.CartItems.add(e);
+                                Global.sum = int.parse(e['Price'] + Global.sum);
+                               // Global.sum = Global.sum + e['Price'];
+                              });
                             },
                               child: Icon(CupertinoIcons.add_circled)),
                         ],

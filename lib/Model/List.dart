@@ -4,55 +4,55 @@ List<Map<String, dynamic>> Product = [
   {
     'id': 1,
     'Product_name': 'Bag',
-    'Price': '150 Rs.',
+    'Price': '500 Rs.',
     'image': 'assets/images/bag.jpg',
   },
   {
     'id': 2,
     'Product_name': 'Goggles',
-    'Price': '150 Rs.',
+    'Price': '850 Rs.',
     'image': 'assets/images/Goggles.jpg',
   },
   {
     'id': 3,
     'Product_name': 'Watch',
-    'Price': '150 Rs.',
+    'Price': '5000 Rs.',
     'image': 'assets/images/Watch.jpg',
   },
   {
     'id': 4,
     'Product_name': 'Perfume',
-    'Price': '150 Rs.',
+    'Price': '1599 Rs.',
     'image': 'assets/images/Perfume.jpg',
   },
   {
     'id': 5,
     'Product_name': 'shoes',
-    'Price': '150 Rs.',
+    'Price': '699 Rs.',
     'image': 'assets/images/shoes.jpg',
   },
   {
     'id': 6,
     'Product_name': 'Earrings',
-    'Price': '150 Rs.',
+    'Price': '720 Rs.',
     'image': 'assets/images/earrings.jpg',
   },
   {
     'id': 7,
     'Product_name': 'Water Bottel',
-    'Price': '150 Rs.',
+    'Price': '199 Rs.',
     'image': 'assets/images/Bottel.jpg',
   },
   {
     'id': 8,
     'Product_name': 'Books',
-    'Price': '150 Rs.',
+    'Price': '650 Rs.',
     'image': 'assets/images/Books.jpg',
   },
   {
     'id': 9,
     'Product_name': 'Shampoo',
-    'Price': '150 Rs.',
+    'Price': '249 Rs.',
     'image': 'assets/images/shampoo.jpg',
   },
 
@@ -86,11 +86,12 @@ List<Map<String, dynamic>> Watch = [
   },
 ];
 
-List _CartItems = [];
+class Global {
+  static int sum = 0;
+  static double total_price = 0;
 
-get shopItems => Product;
-get cartItems=> _CartItems;
-
-void addItemstoCart(int index){
-  _CartItems.add(Product[index]);
+ static List CartItems =[];
 }
+
+
+// List<Map<String, dynamic>> CartItems = [];
